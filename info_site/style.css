@@ -1,0 +1,276 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    line-height: 1.5em;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color:#f7f7f7;
+}
+header {
+    background-color: #ffffff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    z-index: 999; 
+    position: relative;
+}
+
+.footer_1 {
+    background-color: #ffffff;
+    box-shadow: 10px  0px 20px 15px rgba(0, 0, 0, 0.1),0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+header .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo img .con_2_img{
+    height: 50px;
+    display: block;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color:white;
+    padding: 20px;
+    transition: left 0.3s;
+    
+}
+
+.navbar.show {
+    left: 0 !important;
+}
+
+.hide-scroll {
+    overflow: hidden;
+}
+
+.navbar ul {
+    all: unset;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.navbar ul a {
+    all: unset;
+    color: #444444;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 28px;
+}
+.navbar ul a:hover {
+    color:#111111;
+    text-decoration-thickness: 3px;
+}
+
+.close-nav {
+    text-align: right;
+    margin-bottom: 20px;
+}
+.close-nav button {
+    all: unset;
+    background: white;
+    font-size: 42px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 3px;
+    color: #444444;
+}
+.close-nav button:hover {
+    color: #222222;
+    background: white;
+}
+
+.menu-bar button {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: white;
+    height: 50px;
+    width: 50px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.menu-bar i {
+    display: block;
+    border-top: 3px solid #444444;
+    border-bottom: 3px solid #444444;
+}
+.menu-bar i::after {
+    display: block;
+    content: "";
+    border-top: 3px solid #444444;
+    margin: 6px 0;
+}
+.menu-bar button:hover {
+    background: white;
+}
+.menu-bar button:hover i {
+    border-color: #222222;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+.slider {
+    width: 100%;
+    height: 510px;
+    position: relative;
+    
+}
+  
+.slider img {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 240px;
+    min-width: 50%;
+}
+  
+  .slider img:first-child {
+    z-index: 1;
+}
+  
+  .slider img:nth-child(2) {
+    z-index: 0;
+}
+
+.navigation-button {
+    text-align: center;
+    position: relative;
+
+}
+  
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+@media (min-width: 550px) {
+    .navbar {
+        all: unset;
+        display: block;
+    }
+    .navbar ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+    .navbar ul a {
+        font-size: inherit;
+    }
+    .close-nav,
+    .menu-bar {
+        display: none;
+    }
+}
+
+.con_1 h1 {
+    text-align: left;
+}
+.con_2  h1{
+    text-align: center;
+}
+
+
+.con_3 #con_3_h1{
+    text-align: right;
+}
+
+#time {
+    display: inline-block;
+    background-color: #f7f7f7;
+    box-shadow: 1px 1px 1px 1px #717171;
+    color:red;
+    text-align: center;
+    width: 300px;
+}
+
+.time_con{
+    display:block;
+    text-align: center;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+  
+button:hover, a:hover {
+    opacity: 0.7;
+}
+
+
+
